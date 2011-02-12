@@ -1,0 +1,4 @@
+.DS_Store
+build
+SwapOptCmd.xcodeproj/*.mode1v3
+SwapOptCmd.xcodeproj/*.pbxuser

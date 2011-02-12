@@ -1,0 +1,6 @@
+SIMBL plugin which swaps opt and cmd (or option and command) keys in Mac OS X.
+
+The following applications are supported.
+ - Terminal.app (com.apple.Terminal)
+ - iTerm (net.sourceforge.iTerm)
+ - iTerm2 (com.google.code.iterm2)
