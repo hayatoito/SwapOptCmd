@@ -119,15 +119,15 @@ charactersIgnoringModifiers: characters
 
 @end
 
-@interface SOCPlugin : NSObject
+@interface SwapOptCmdPlugin : NSObject
 @end
 
-@implementation SOCPlugin
+@implementation SwapOptCmdPlugin
 
-+ (SOCPlugin*)sharedInstance
++ (SwapOptCmdPlugin*)sharedInstance
 {
-  static SOCPlugin* plugin = nil;
-  if (plugin == nil) plugin = [[SOCPlugin alloc] init];
+  static SwapOptCmdPlugin* plugin = nil;
+  if (plugin == nil) plugin = [[SwapOptCmdPlugin alloc] init];
   return plugin;
 }
 
@@ -138,7 +138,7 @@ charactersIgnoringModifiers: characters
   Method new = class_getInstanceMethod([NSApplication class],
                                        @selector(replace_sendEvent:));
   method_exchangeImplementations(org, new);
-  [SOCPlugin sharedInstance];
+  [SwapOptCmdPlugin sharedInstance];
   NSLog(@"SwapOptCmd installed");
 }
 
